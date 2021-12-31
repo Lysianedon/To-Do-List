@@ -128,7 +128,6 @@ span {
 }
 
 p {
-
     padding: 5px;
     margin-top: 2%;
     text-align: center;
@@ -167,21 +166,39 @@ li .tasksDone {
 
 @media (max-width:580px){
 
+    form,
+    li {
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    form label {
+        margin-left: 10%;
+        font-size: 7.5vw;
+    }
+
+    form button {
+        padding: 2%;
+        border: 1px solid #8f6521;
+        margin: 10%;
+        color: white;
+        transition: 190ms ease-in-out;
+        font-family: 'Times New Roman', Times, serif;
+    }
+ 
+    
     h1 {
         font-size: 8vw;
     }
 
     body{
         background-size: 405%;
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
-    form input {
-        width: 65%;
-    }
-
+    form input,
     li {
-        width: 65%;
+        width: 55%;
     }
 
 
