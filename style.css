@@ -1,0 +1,188 @@
+/*------------------------- GENERAL PARAMETERS --------------------------*/
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    color: #030303;
+    background: url('./todolist.jpeg') center/cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+/* ------------------------- STYLING MY ELEMENTS -------------------------- */
+hr {
+    width: 30%;
+    margin: auto ;
+    border: 1px solid #8c6d55b2;
+}
+
+.container{
+    width: 80%;
+    margin: 4% auto;
+    border: 1px solid rgb(0, 0, 0);
+    background: #8c6d55b2;
+    border-radius: 5px;
+    box-shadow: 1px 2px 18px 1px rgba(105,73,22,0.54);
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin: 30px 0;
+    color: black;
+}
+
+.underline {
+    color: black;
+    background-color: rgba(150, 91, 91, 0.801);
+    padding: 0 3px;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    font-size: 3vw;
+    /* color: rgb(161, 41, 41); */
+    margin: 2% 0;
+    color: white;
+
+}
+
+form input {
+    width: clamp(50%, 90%, 100%);
+    padding: 12px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: #e4e3e2 ;
+    border: 1px solid;
+}
+
+form button {
+    padding: 2%;
+    font-size: 19px;
+    background-color: #694916;
+    border-radius: 10px;
+    border: 1px solid #8f6521;
+    margin: 1.5% 0;
+    color: white;
+    transition: 190ms ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form button:hover {
+    background-color: white;
+    color:#694916;
+    transform: scale(1.021);
+}
+
+.tasks-list {
+    list-style-type: none;
+    margin: 20px auto 60px;
+    max-width: 1200px;
+    min-width: 400px;
+}
+
+li {
+    font-size: 20px;
+    width: 100%;
+    background: #f1f1f1a9;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #333;
+    margin: 5px auto;
+    margin-bottom: 1%;
+    width: clamp(70%, 90%, 100%);
+}
+
+li input {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+/* button img {
+    width: 40px;
+} */
+
+li span {
+    font-size: 20px;
+    margin-left: 20px;
+}
+span {
+    color: #694916;
+}
+
+p {
+
+    padding: 5px;
+    margin-top: 2%;
+    text-align: center;
+    font-size: larger;
+}
+
+.error {
+    background-color: rgba(161, 41, 41, 0.623);
+    color: white;
+}
+
+.success {
+    background: #1f4e1b9c;
+    color: white;
+}
+
+/* ANIMATION  FOR ACCOMPLISHED TASKS */
+
+li .tasksDone {
+    text-decoration: line-through;
+    color: grey;
+
+}
+
+/*------------------------  RESPONSIVE ------------------------ */
+
+@media (max-width:1080px){
+    body{
+        background-size: 200%;
+    }
+
+    form label {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width:580px){
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    body{
+        background-size: 405%;
+        overflow-y: hidden;
+    }
+
+    form input {
+        width: 65%;
+    }
+
+    li {
+        width: 65%;
+    }
+
+
+}
