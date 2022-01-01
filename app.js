@@ -11,8 +11,8 @@ class AddTaskToList {
 
         this.valueField = valueField;
 
-        //Creating a new li > input > span for my new task
-        if (valueField !== "" && valueField !== " ") {
+        // If the field is not empty : Creating a new li > input > span for my new task
+        if (valueField !== "" && valueField !== " "){
 
             let newLi = document.createElement('li');
 
